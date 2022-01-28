@@ -9,5 +9,5 @@ E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.Ge
 E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.CoreCompileInputs.cache
 E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.exe
 E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.pdb
-E:\Project\Program\C_Sharp\AutoLuckyUnicorn\bin\Debug\Emgu.CV.World.dll
 E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.CopyComplete
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\bin\Debug\Emgu.CV.World.dll

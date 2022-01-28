@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -66,7 +67,7 @@ namespace AutoLuckyUnicorn
         public bool flag_battle_start = false;
         public int count = 0;
 
-        private Timer atimer;
+        private System.Windows.Forms.Timer atimer;
         private int Counter = 240;
 
        /* private void btn_Auto_Click(object sender, EventArgs e)
@@ -89,7 +90,7 @@ namespace AutoLuckyUnicorn
         //-----------------Methods--------------------------------------------
         public void _TimeCount()
         {
-            atimer = new Timer();
+            atimer = new System.Windows.Forms.Timer();
             atimer.Tick += new EventHandler(aTimer_Tick);
             atimer.Interval = 60000;
             atimer.Start();
@@ -132,8 +133,8 @@ namespace AutoLuckyUnicorn
         public void _ResetStatus()
         {
             status1.Text = "Yes";
-            status2.Text = "Yes";
-            status3.Text = "Yes";
+            //status2.Text = "Yes";
+            //status3.Text = "Yes";
             status4.Text = "Yes";
         }
 
@@ -161,10 +162,12 @@ namespace AutoLuckyUnicorn
                     case (int)State.Close:
                         _SearchAndClick("Close.PNG", 1);
                         _TransState(State.Easy);
+                        Thread.Sleep(5000);
                         break;
                     case (int)State.Easy:
-                        _SearchAndClick("Webup.PNG", 10);
+                        //_SearchAndClick("Webup.PNG", 10);
                         _SearchAndClick("Easy.PNG", 1);
+                        Thread.Sleep(1000);
                         if( flag_battle_start == true)
                         {
                             flag_battle_start = false;
@@ -180,6 +183,7 @@ namespace AutoLuckyUnicorn
                     case (int)State.Medium:
                         _SearchAndClick("Webdown.PNG", 6);
                         _SearchAndClick("Medium.PNG", 1);
+                        Thread.Sleep(1000);
                         if (flag_battle_start == true)
                         {
                             flag_battle_start = false;
@@ -232,36 +236,39 @@ namespace AutoLuckyUnicorn
                         _TransState(State.Confirm);
                         break;
                     case (int)State.Confirm:
+                        //flag_finish = false;
+                        screen = CaptureHelper.CaptureScreen();
+                        subBitMap = ImageScanOpenCV.GetImage("Image\\" + "PageConfirm.PNG");
+                        resBitmap = ImageScanOpenCV.FindOutPoint((Bitmap)screen, subBitMap);
+                        if (resBitmap != null)
+                        {
+                            _SearchAndClick("Webdown.PNG", 3);
+                            flag_finish = false;
+                        }
                         screen = CaptureHelper.CaptureScreen();
                         subBitMap = ImageScanOpenCV.GetImage("Image\\" + "Confirm.PNG");
                         resBitmap = ImageScanOpenCV.FindOutPoint((Bitmap)screen, subBitMap);
-                        if (resBitmap == null)
-                        {
-                            screen = CaptureHelper.CaptureScreen();
-                            subBitMap = ImageScanOpenCV.GetImage("Image\\" + "PageConfirm.PNG");
-                            resBitmap = ImageScanOpenCV.FindOutPoint((Bitmap)screen, subBitMap);
-                            if (resBitmap != null)
-                            {
-                                _SearchAndClick("Webdown.PNG", 3);
-                            }
-                        }
-                        else
+                        if (resBitmap != null)
                         {
                             var x = resBitmap.Value.X;
                             var y = resBitmap.Value.Y;
                             AutoControl.MouseClick(x + 2, y + 2);
+                            flag_finish = true;
                         }
-                        if (flag_battle_end == true)
+                        if (flag_finish == true)
                         {
-                            _TransState(State.Recive);
-                            flag_battle_end = false;
+                            if (flag_battle_end == true)
+                            {
+                                _TransState(State.Recive);
+                                flag_battle_end = false;
+                            }
+                            else
+                            {
+                                _Search("History.PNG");
+                                _TransState(State.Refresh);
+                                flag_finish = true;
+                            }
                         }
-                        else
-                        {
-                            _Search("History.PNG");
-                            _TransState(State.Refresh);
-                        }
-
                         break;
 
                     case (int)State.Check:
@@ -421,6 +428,7 @@ namespace AutoLuckyUnicorn
         {
             if (flag_finish == true)
                 state = lstate;
+            flag_finish = false;
         }
 
         public void _CheckStatus(int i)
