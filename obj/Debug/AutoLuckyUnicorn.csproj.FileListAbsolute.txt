@@ -1,0 +1,13 @@
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\bin\Debug\AutoLuckyUnicorn.exe.config
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\bin\Debug\AutoLuckyUnicorn.exe
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\bin\Debug\AutoLuckyUnicorn.pdb
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.AssemblyReference.cache
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.SuggestedBindingRedirects.cache
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.Form1.resources
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.Properties.Resources.resources
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.GenerateResource.cache
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.CoreCompileInputs.cache
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.exe
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.pdb
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\bin\Debug\Emgu.CV.World.dll
+E:\Project\Program\C_Sharp\AutoLuckyUnicorn\obj\Debug\AutoLuckyUnicorn.csproj.CopyComplete
