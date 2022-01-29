@@ -133,9 +133,20 @@ namespace AutoLuckyUnicorn
         public void _ResetStatus()
         {
             status1.Text = "Yes";
-            //status2.Text = "Yes";
-            //status3.Text = "Yes";
+            status2.Text = "Yes";
+            status3.Text = "Yes";
             status4.Text = "Yes";
+            status5.Text = "Yes";
+            status6.Text = "Yes";
+            status7.Text = "Yes";
+            status8.Text = "Yes";
+            status9.Text = "Yes";
+            status10.Text = "Yes";
+            status11.Text = "Yes";
+            status12.Text = "Yes";
+            status13.Text = "Yes";
+            status14.Text = "Yes";
+            status15.Text = "Yes";
         }
 
         public void _Auto()
@@ -207,7 +218,7 @@ namespace AutoLuckyUnicorn
 
                         break;
                     case (int)State.Recive:
-                        _SearchAndClick("OK.PNG", 1);
+                        _SearchAndClick("Close.PNG", 1);
                         _TransState(State.Back);
                         break;
                     case (int)State.Back:
@@ -304,6 +315,36 @@ namespace AutoLuckyUnicorn
                                     _TransState(State.Easy);
                                     break;
                                 }
+                                _CheckStatus(8);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(8);
+                                    status2.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
+                                _CheckStatus(12);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(12);
+                                    status2.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
+                                _CheckStatus(15);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(15);
+                                    status2.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
                                 _CheckStatus(4);
                                 if (pet.status == "Yes")
                                 {
@@ -314,10 +355,39 @@ namespace AutoLuckyUnicorn
                                     _TransState(State.Easy);
                                     break;
                                 }
-
+                                _CheckStatus(5);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(5);
+                                    status4.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
                             }
                             if (element == Element.Darkness)
                             {
+                                _CheckStatus(6);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(6);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
+                                _CheckStatus(10);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(10);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
                                 _CheckStatus(3);
                                 if (pet.status == "Yes")
                                 {
@@ -328,7 +398,55 @@ namespace AutoLuckyUnicorn
                                     _TransState(State.Easy);
                                     break;
                                 }
-
+                                _CheckStatus(7);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(7);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
+                            }
+                            if( element == Element.Metal)
+                            {
+                                _CheckStatus(9);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(9);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
+                            }
+                            if( element == Element.Earth)
+                            {
+                                _CheckStatus(14);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(14);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
+                            }
+                            if( element == Element.Light)
+                            {
+                                _CheckStatus(13);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(13);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
                             }
                             flag_finish = true;
                             _TransState(State.Medium);
@@ -364,6 +482,16 @@ namespace AutoLuckyUnicorn
                                     _TransState(State.Medium);
                                     break;
                                 }
+                                _CheckStatus(5);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(5);
+                                    status4.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Medium);
+                                    break;
+                                }
 
                             }
                             if (element == Element.Darkness)
@@ -372,6 +500,39 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(3);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Medium);
+                                    break;
+                                }
+                                _CheckStatus(7);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(7);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Medium);
+                                    break;
+                                }
+                                _CheckStatus(11);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(11);
+                                    status3.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Medium);
+                                    break;
+                                }
+                            }
+                            if( element == Element.Light)
+                            {
+                                _CheckStatus(13);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(13);
                                     status3.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
@@ -417,6 +578,7 @@ namespace AutoLuckyUnicorn
                 for(int i = 0; i < n; i++)
                 {
                     AutoControl.MouseClick(x + 2, y + 2);
+                    Thread.Sleep(200);
                 }
                 
                 flag_finish = true;
@@ -447,7 +609,39 @@ namespace AutoLuckyUnicorn
                 case 4:
                     pet.status = status4.Text;
                     break;
-
+                case 5:
+                    pet.status = status5.Text;
+                    break;
+                case 6:
+                    pet.status = status6.Text;
+                    break;
+                case 7:
+                    pet.status = status7.Text;
+                    break;
+                case 8:
+                    pet.status = status8.Text;
+                    break;
+                case 9:
+                    pet.status = status9.Text;
+                    break;
+                case 10:
+                    pet.status = status10.Text;
+                    break;
+                case 11:
+                    pet.status = status11.Text;
+                    break;
+                case 12:
+                    pet.status = status12.Text;
+                    break;
+                case 13:
+                    pet.status = status13.Text;
+                    break;
+                case 14:
+                    pet.status = status14.Text;
+                    break;
+                case 15:
+                    pet.status = status15.Text;
+                    break;
             }
         }
 
@@ -490,6 +684,39 @@ namespace AutoLuckyUnicorn
                             _SearchAndClick("SwapPetR.PNG", 3);
                          //   flag_finish = false;
                         // }
+                        break;
+                    case 5:
+                        _SearchAndClick("SwapPetR.PNG", 4);
+                        break;
+                    case 6:
+                        _SearchAndClick("SwapPetR.PNG", 5);
+                        break;
+                    case 7:
+                        _SearchAndClick("SwapPetR.PNG", 6);
+                        break;
+                    case 8:
+                        _SearchAndClick("SwapPetR.PNG", 7);
+                        break;
+                    case 9:
+                        _SearchAndClick("SwapPetR.PNG", 8);
+                        break;
+                    case 10:
+                        _SearchAndClick("SwapPetR.PNG", 9);
+                        break;
+                    case 11:
+                        _SearchAndClick("SwapPetR.PNG", 10);
+                        break;
+                    case 12:
+                        _SearchAndClick("SwapPetR.PNG", 11);
+                        break;
+                    case 13:
+                        _SearchAndClick("SwapPetR.PNG", 12);
+                        break;
+                    case 14:
+                        _SearchAndClick("SwapPetR.PNG", 13);
+                        break;
+                    case 15:
+                        _SearchAndClick("SwapPetR.PNG", 14);
                         break;
                 }
             }
