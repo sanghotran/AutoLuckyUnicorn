@@ -408,6 +408,16 @@ namespace AutoLuckyUnicorn
                                     _TransState(State.Easy);
                                     break;
                                 }
+                                _CheckStatus(11);
+                                if (pet.status == "Yes")
+                                {
+                                    _SwapPet(11);
+                                    status11.Text = "No";
+                                    flag_finish = true;
+                                    flag_battle_start = true;
+                                    _TransState(State.Easy);
+                                    break;
+                                }
                             }
                             if( element == Element.Metal)
                             {
