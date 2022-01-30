@@ -285,7 +285,7 @@ namespace AutoLuckyUnicorn
                     case (int)State.Check:
                         _CheckElement();
                         _SearchAndClick("Close.PNG", 1);
-                        _SearchAndClick("Webdown.PNG", 1);                        
+                        _SearchAndClick("Webdown.PNG", 2);                        
                         if (pet.flag_check_easy == true)
                         {
                             pet.flag_check_easy = false;
@@ -786,7 +786,7 @@ namespace AutoLuckyUnicorn
             //status2.Text = "No";
             //status1.Text = "No";
             //status4.Text = "No";
-            count = 4;
+            count = 15;
             //_TimeCount();
         }
 
