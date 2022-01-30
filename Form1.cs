@@ -319,7 +319,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(8);
-                                    status2.Text = "No";
+                                    status8.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -329,7 +329,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(12);
-                                    status2.Text = "No";
+                                    status12.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -339,7 +339,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(15);
-                                    status2.Text = "No";
+                                    status15.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -359,7 +359,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(5);
-                                    status4.Text = "No";
+                                    status5.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -372,7 +372,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(6);
-                                    status3.Text = "No";
+                                    status6.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -382,7 +382,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(10);
-                                    status3.Text = "No";
+                                    status10.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -402,7 +402,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(7);
-                                    status3.Text = "No";
+                                    status7.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -415,7 +415,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(9);
-                                    status3.Text = "No";
+                                    status9.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -428,7 +428,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(14);
-                                    status3.Text = "No";
+                                    status14.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -441,7 +441,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(13);
-                                    status3.Text = "No";
+                                    status13.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Easy);
@@ -486,7 +486,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(5);
-                                    status4.Text = "No";
+                                    status5.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Medium);
@@ -510,7 +510,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(7);
-                                    status3.Text = "No";
+                                    status7.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Medium);
@@ -520,7 +520,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(11);
-                                    status3.Text = "No";
+                                    status11.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Medium);
@@ -533,7 +533,7 @@ namespace AutoLuckyUnicorn
                                 if (pet.status == "Yes")
                                 {
                                     _SwapPet(13);
-                                    status3.Text = "No";
+                                    status13.Text = "No";
                                     flag_finish = true;
                                     flag_battle_start = true;
                                     _TransState(State.Medium);
