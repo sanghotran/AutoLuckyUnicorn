@@ -218,7 +218,7 @@ namespace AutoLuckyUnicorn
 
                         break;
                     case (int)State.Recive:
-                        _SearchAndClick("Close.PNG", 1);
+                        _SearchAndClick("OK.PNG", 1);
                         _TransState(State.Back);
                         break;
                     case (int)State.Back:
